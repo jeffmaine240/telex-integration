@@ -69,7 +69,7 @@ async def monitor_task(payload: MonitorPayload):
         await client.post(payload.return_url, json=data)
 
 
-@bot_router.get("/tick", status_code=status.HTTP_202_ACCEPTED)
+@bot_router.post("/tick", status_code=status.HTTP_202_ACCEPTED)
 def send_motivation(payload: MonitorPayload, background_tasks: BackgroundTasks):
     background_tasks.add_task(monitor_task, payload)
     return {"status": "accepted"}
