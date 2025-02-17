@@ -66,7 +66,8 @@ async def monitor_task(payload: MonitorPayload):
         "status": "success"
     }
     async with httpx.AsyncClient() as client:
-        await client.get(payload.return_url, json=data)
+        print("got here")
+        await client.post(payload.return_url, json=data)
 
 
 @bot_router.post("/tick", status_code=status.HTTP_202_ACCEPTED)
