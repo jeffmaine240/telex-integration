@@ -12,10 +12,10 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://telex.im", "*"],  # Allow only telex.im
+    allow_origins=["https://telex.im", "*"],
     allow_credentials=True,
-    allow_methods=["*"],  # Allow all HTTP methods
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 app.include_router(router=bot_router, prefix="", tags=["bot"])
