@@ -26,7 +26,7 @@ def get_integration_json(request: Request):
                 "Daily Motivational Quotes: Automatically sends a new motivational quote every day.\nInspiration Boost: Helps to uplift and inspire team members to stay positive and productive.\nAutomated Scheduling: Quotes are delivered at a set interval",
                 "ensuring consistent motivation.\nEasy Integration: Seamlessly integrates with Telex channels for hassle-free deployment.\nCustomizable Settings: Allows customization of delivery time intervals to fit team schedules."
             ],
-            "integration_category": "communication",
+            "integration_category": "Communication & Collaboration",
             "author": "jeffmaine",
             "settings": [
                 {
