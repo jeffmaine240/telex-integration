@@ -33,7 +33,7 @@ def get_integration_json(request: Request):
                     "label": "time interval",
                     "type": "text",
                             "required": True,
-                            "default": "* * * * *"
+                            "default": "*/5 * * * *"
                 }
             ],
             "target_url": "null",
