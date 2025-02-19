@@ -31,10 +31,10 @@ def get_integration_json(request: Request):
             "settings": [
                 {
                     "label": "time interval",
-                    "type": "text",
-                            "required": True,
-                            "default": "0 9 * * *"
-                }
+                    "type": "dropdown",
+                    "required": True,
+                    "default": "15 9 * * *"
+            }
             ],
             "target_url": "null",
             "tick_url": f"{base_url}/tick"
