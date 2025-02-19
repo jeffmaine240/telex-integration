@@ -34,7 +34,7 @@ def get_integration_json(request: Request):
                     "label": "time interval",
                     "type": "dropdown",
                     "required": True,
-                    "default": crontab(minute="*/2")
+                    "default": "* * * * *"
             }
             ],
             "target_url": "null",
