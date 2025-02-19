@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Request, BackgroundTasks, HTTPException, status
 import httpx
 from .schemas import MonitorPayload  # Ensure your schemas are properly defined
+from celery.schedules import crontab
 
 bot_router = APIRouter()
 
@@ -33,7 +34,7 @@ def get_integration_json(request: Request):
                     "label": "time interval",
                     "type": "dropdown",
                     "required": True,
-                    "default": "15 9 * * *"
+                    "default": crontab(minute="*/2")
             }
             ],
             "target_url": "null",
