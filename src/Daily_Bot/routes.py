@@ -32,7 +32,7 @@ def get_integration_json(request: Request):
             "settings": [
                 {
                     "label": "time interval",
-                    "type": "dropdown",
+                    "type": "text",
                     "required": True,
                     "default": "* * * * *"
             }
