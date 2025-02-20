@@ -24,8 +24,10 @@ def get_integration_json(request: Request):
             "is_active": True,
             "integration_type": "interval",
             "key_features": [
-                "Daily Motivational Quotes: Automatically sends a new motivational quote every day.\nInspiration Boost: Helps to uplift and inspire team members to stay positive and productive.\nAutomated Scheduling: Quotes are delivered at a set interval",
-                "ensuring consistent motivation.\nEasy Integration: Seamlessly integrates with Telex channels for hassle-free deployment.\nCustomizable Settings: Allows customization of delivery time intervals to fit team schedules."
+                "Daily Motivational Quotes: Automatically sends a new motivational quote every day.",
+                "Inspiration Boost: Helps to uplift and inspire team members to stay positive and productive.",
+                "Automated Scheduling: Quotes are delivered at a set interval ensuring consistent motivation.",
+                "Easy Integration: Seamlessly integrates with Telex channels for hassle-free deployment.\nCustomizable Settings: Allows customization of delivery time intervals to fit team schedules."
             ],
             "integration_category": "Communication & Collaboration",
             "author": "jeffmaine",
@@ -37,7 +39,7 @@ def get_integration_json(request: Request):
                     "default": "* * * * *"
             }
             ],
-            "target_url": "null",
+            "target_url": "{base_url}/tick",
             "tick_url": f"{base_url}/tick"
         }
     }
