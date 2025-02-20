@@ -76,7 +76,7 @@ pip install -r requirements.txt
 ## Usage  
 ### 1. Run the Application Locally  
 ```sh
-uvicorn main:app --reload
+uvicorn src:app --reload
 ```
 
 ### 2. Access the Integration JSON
@@ -89,12 +89,13 @@ check for the json details
 
 ## Deployment
 
-The integration is deployed on fly.io and can be accessed here:  
-[Live Deployment](https://example-task.fly.dev/)
+The integration is deployed on render.com and can be accessed here:  
+[Live Deployment](https://telex-motivation-integration.onrender.com)
 
 ### 3. Telex Integration
 - Add the integration JSON URL in your Telex organization.
-- Configure the time interval in the settings (e.g., `* * * * *` for every day).
+- Configure the time interval in the settings (e.g., `0 9 * * *` for 9am every day).
+
 
 ## Screenshots
 ![alt text](<Screenshot 2025-02-17 at 20.11.27.png>)
