@@ -58,8 +58,8 @@ The **Daily Motivation Bot** sends motivational quotes daily to inspire and upli
 ## Installation  
 ### 1. Clone the Repository  
 ```sh
-git clone git@github.com:jeffmaine240/telex-integration.git
-cd telex-integration
+git clone git@github.com:telexintegrations/telex-daily-motivation-integration.git
+cd telex-daily-motivation-integration
 ```
 
 ### 2. Create a Virtual Environment 
