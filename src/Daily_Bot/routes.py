@@ -39,7 +39,7 @@ def get_integration_json(request: Request):
                     "default": "* * * * *"
             }
             ],
-            "target_url": "{base_url}/tick",
+            "target_url": "",
             "tick_url": f"{base_url}/tick"
         }
     }
